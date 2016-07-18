@@ -1,0 +1,38 @@
+{
+  "name": "serial-servo-control",
+  "version": "0.0.1",
+  "description": "Serial Servo Control",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gary-Ascuy/ssc.git"
+  },
+  "keywords": [
+    "servo",
+    "control",
+    "ssc",
+    "board",
+    "robot",
+    "hexapod",
+    "serial"
+  ],
+  "author": "Gary Ascuy <gary.ascuy@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gary-Ascuy/ssc/issues"
+  },
+  "homepage": "https://github.com/Gary-Ascuy/ssc#readme",
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "engines": {
+    "node": ">=4.4.7"
+  },
+  "dependencies": {
+    "serialport": "^4.0.1"
+  }
+}
