@@ -30,3 +30,10 @@ http://es.aliexpress.com/item/9DOF-LTR-4-Turtle-Robot-Four-Feet-Frame-Kits-LD-20
 http://www.ebay.com/itm/6DOF-Aluminium-Clamp-Claw-Mount-kit-Mechanical-Robotic-Arm-Servo-32CH-Controller/251888871234?_trksid=p2047675.c100623.m-1&_trkparms=aid%3D222007%26algo%3DSIC.MBE%26ao%3D1%26asc%3D20160323102634%26meid%3D3515c5b5131f473ab44b54d04418212a%26pid%3D100623%26rk%3D3%26rkt%3D6%26sd%3D281584338794
 
 ![Arm](http://i.ebayimg.com/images/g/lPsAAOSw5ZBWGIax/s-l300.jpg)
+
+## Contributions 
+
+if you are interested to participate in this project, you can email me to gary.ascuy@gmail.com. and let's do it T^T)9 
+this is under construction, one of golds of this project it is have a good and easy way to manage those robots. 
+
+![We want you for this Project](https://cdn.meme.am/instances/400x/64337504.jpg)
