@@ -1,3 +1,3 @@
-const ssc = require('./lib/ssc.js');
+const SSC = require('./lib/ssc.js');
 
-console.log(ssc);
+module.exports = {SSC};
