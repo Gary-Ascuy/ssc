@@ -1,10 +1,10 @@
 {
   "name": "serial-servo-control",
-  "version": "0.0.3",
-  "description": "Serial Servo Control",
+  "version": "0.0.4",
+  "description": "Serial Servo Controller (SSC)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"I hope this works that is the main reason to do not have tests xD JK I will put after\" && exit 1"
   },
   "repository": {
     "type": "git",
