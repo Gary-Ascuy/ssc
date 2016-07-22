@@ -33,6 +33,11 @@
     "node": ">=4.4.7"
   },
   "dependencies": {
+    "commander": "^2.9.0",
     "serialport": "^4.0.1"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "ssc": "cli/main.js"
   }
 }
