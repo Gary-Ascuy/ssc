@@ -1,9 +1,10 @@
 #! /usr/bin/env node
 const program = require('commander');
 const Commands = require('./commands');
+const packageJson = require('../package.json');
 
-program.version('0.0.1')
-  .description('Serial Servo Controller CLI')
+program.version(packageJson.version)
+  .description(packageJson.description)
   .usage('[options] <command> [parameters ...]')
   .option('-i, --input <file>', 'Execution file script')
   .parse(process.argv);
