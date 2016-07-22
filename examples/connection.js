@@ -1,4 +1,3 @@
-const sleep = require('sleep');
 const {SSC} = require('../'); // require('serial-servo-control')
 
 const ssc = new SSC();
