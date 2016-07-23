@@ -1,5 +1,5 @@
 const {SSC} = require('../'); // require('serial-servo-control')
-const {getOptions} = require('./lib');
+const {getOptions} = require('./.lib');
 
 //
 // Connection test

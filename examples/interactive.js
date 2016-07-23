@@ -1,6 +1,6 @@
 const {SSC} = require('../'); // require('serial-servo-control')
 const readline = require('readline');
-const {getOptions} = require('./lib');
+const {getOptions} = require('./.lib');
 
 const buildMethod = (line) => {
   const args = line.split(' ');
