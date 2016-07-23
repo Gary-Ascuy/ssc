@@ -1,10 +1,39 @@
 const fs = require('fs');
 const path = require('path');
+const SerialPort = require('serialport');
+const YAML = require('yamljs');
+
+const copyright = (extra = '\n') => {
+  console.log('Serial Servo Controller // Command Line Interface');
+  console.log(`Gary Ascuy <gary.ascuy@gmail.com>${extra}`);
+};
+
+const devices = (cb) => {
+  SerialPort.list((error, ports) => {
+    return error ? console.error('Error listing ports', error) : cb(ports);
+  });
+};
+
+const formats = {
+  text(ports) {
+    const data = ports.map(port => `${port.comName}\t${port.pnpId || ''}\t${port.manufacturer || ''}`);
+    console.log(data.join('\n'));
+  },
+  json(ports) {
+    console.log(JSON.stringify(ports, null, 2));
+  },
+  yaml(ports) {
+    console.log(YAML.stringify(ports, 2));
+  }
+};
 
 class Commands {
-  constructor() {}
+  constructor(packageJson) {
+    this.packageJson = packageJson;
+  }
 
   help(program) {
+    copyright('');
     program.help();
   }
 
@@ -20,11 +49,17 @@ class Commands {
   }
 
   list(program) {
+    copyright();
     const [command, query] = program.args;
     const fullpath = path.resolve(__dirname, '../examples/');
-    const examples = fs.readdirSync(fullpath).map(file => '  ' + file.replace(/\.js$/, ''))
-    console.log(`${command}: Examples available to run\n`);
+    const examples = fs.readdirSync(fullpath).map(file => '  ' + file.replace(/\.js$/, ''));
+    console.log(`Examples available to run:\n`);
     console.log(examples.join('\n'));
+  }
+
+  devices(program) {
+    copyright();
+    devices(formats[program.format] || formats['text']);
   }
 };
 

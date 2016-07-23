@@ -6,13 +6,13 @@ const packageJson = require('../package.json');
 program.version(packageJson.version)
   .description(packageJson.description)
   .usage('[options] <command> [parameters ...]')
-  .option('-i, --input <file>', 'Execution file script')
+  .option('-f, --format <format>', 'Output format', /^(json|yaml|text)$/i, 'yaml')
   .parse(process.argv);
 
 if (!program.args.length) {
   program.help();
 } else {
   const [command] = program.args;
-  const commands = new Commands();
+  const commands = new Commands(packageJson);
   (commands[command] || commands['default'])(program);
 }
