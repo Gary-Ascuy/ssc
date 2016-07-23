@@ -1,6 +1,6 @@
 {
   "name": "serial-servo-control",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Serial Servo Controller (SSC)",
   "main": "index.js",
   "scripts": {

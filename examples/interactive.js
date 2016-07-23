@@ -21,6 +21,9 @@ module.exports = {
   ].join('\n')
 };
 
+//
+// Read & Process line by line.
+//
 rl.on('line', (line) => {
   if (line.length) {
     const method = buildMethod(line);
