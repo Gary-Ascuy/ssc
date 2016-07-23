@@ -1,5 +1,6 @@
 const {SSC} = require('../'); // require('serial-servo-control')
 const readline = require('readline');
+const {getOptions} = require('./lib');
 
 const buildMethod = (line) => {
   const args = line.split(' ');
@@ -10,7 +11,9 @@ const buildMethod = (line) => {
 //
 // Interactive command line interface, press ctrl+c to exit.
 //
-const ssc = new SSC();
+const options = getOptions();
+const ssc = new SSC(options);
+
 const rl = readline.createInterface({input: process.stdin, output: process.stdout});
 module.exports = {
   message: [

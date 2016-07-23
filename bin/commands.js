@@ -53,8 +53,10 @@ class Commands {
     copyright();
     const [command, query] = program.args;
     const fullpath = path.resolve(__dirname, '../examples/');
-    const examples = fs.readdirSync(fullpath).map(file => '  ' + file.replace(/\.js$/, ''));
     console.log(`Examples available to run: $ ssc run <exampleFileName>\n`);
+
+    const files = fs.readdirSync(fullpath).filter(file => !/^\./.test(file) && /\.js$/.test(file));
+    const examples = files.map(file => `  ${file.replace(/\.js$/, '')}`);
     console.log(examples.join('\n') + '\n');
   }
 
