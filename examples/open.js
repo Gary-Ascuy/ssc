@@ -1,5 +1,8 @@
 const {SSC} = require('../'); // require('serial-servo-control')
 
+//
+// Connection test
+//
 const ssc = new SSC();
 ssc.on('open', () => {
   console.log('Opened !!!');

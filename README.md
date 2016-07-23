@@ -3,12 +3,12 @@
 The main objective of this repository (module), it is compile and have in only one place all the imformation required to use a SSC, like design, software and other kind of things. also the propouse it's have code to manage servos.
 
 ## CP210x USB to UART Bridge Virtual COM Port (VCP) Drivers
-Install this is required to have a way to control the SSC from computer 
+Install this is required to have a way to control the SSC from computer
 https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx
 
 ## How it can be used
 
-### Install 
+### Install
 ```
 $ npm i --global serial-servo-control
 ```
@@ -23,13 +23,14 @@ $ ssc devices
 $ ssc list
 ```
 
-### Test device connection 
+### Execute examples
 ```
-$ ssc run connection
+$ ssc run open
+$ ssc run interactive
 ```
 
 
-## Diagrams 
+## Diagrams
 ![Serial Servo Controller](https://raw.githubusercontent.com/Gary-Ascuy/ssc/master/assets/ssc-components.png)
 
 ## Robots that use SSC
@@ -50,9 +51,9 @@ $ ssc run connection
 
 ![Arm](http://i.ebayimg.com/images/g/lPsAAOSw5ZBWGIax/s-l300.jpg)
 
-## Contributions 
+## Contributions
 
-if you are interested to participate in this project, you can email me to gary.ascuy@gmail.com. and let's do it T^T)9 
-this is under construction, one of golds of this project it is have a good and easy way to manage those robots. 
+if you are interested to participate in this project, you can email me to gary.ascuy@gmail.com. and let's do it T^T)9
+this is under construction, one of golds of this project it is have a good and easy way to manage those robots.
 
 ![We want you for this Project](https://cdn.meme.am/instances/400x/64337504.jpg)

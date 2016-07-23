@@ -45,7 +45,8 @@ class Commands {
   run(program) {
     const [command, file] = program.args;
     const fullpath = `../examples/${file}`;
-    console.log(command, fullpath, require(fullpath));
+    const module = require(fullpath);
+    console.log(module.message || `[${command}] From ${fullpath}`);
   }
 
   list(program) {
