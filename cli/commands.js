@@ -53,8 +53,8 @@ class Commands {
     const [command, query] = program.args;
     const fullpath = path.resolve(__dirname, '../examples/');
     const examples = fs.readdirSync(fullpath).map(file => '  ' + file.replace(/\.js$/, ''));
-    console.log(`Examples available to run:\n`);
-    console.log(examples.join('\n'));
+    console.log(`Examples available to run: $ ssc run <exampleFileName>\n`);
+    console.log(examples.join('\n') + '\n');
   }
 
   devices(program) {
