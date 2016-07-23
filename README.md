@@ -6,6 +6,29 @@ The main objective of this repository (module), it is compile and have in only o
 Install this is required to have a way to control the SSC from computer 
 https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx
 
+## How it can be used
+
+### Install 
+```
+$ npm i --global serial-servo-control
+```
+
+### Show available devices (Serial Ports)
+```
+$ ssc devices
+```
+
+### Show available examples
+```
+$ ssc list
+```
+
+### Test device connection 
+```
+$ ssc run connection
+```
+
+
 ## Diagrams 
 ![Serial Servo Controller](https://raw.githubusercontent.com/Gary-Ascuy/ssc/master/assets/ssc-components.png)
 
