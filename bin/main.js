@@ -14,6 +14,8 @@ program.version(packageJson.version)
   .option('--oo-parity <parity>', 'Parity default: none', 'none')
   .option('--oo-stop-bits <stopBits>', 'Stop bits default: 1', 1)
 
+  .option('-i, --input <file>', 'Input file')
+
   .parse(process.argv);
 
 if (!program.args.length) {

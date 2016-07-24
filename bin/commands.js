@@ -56,7 +56,7 @@ class Commands {
     console.log(`Examples available to run: $ ssc run <exampleFileName>\n`);
 
     const files = fs.readdirSync(fullpath).filter(file => !/^\./.test(file) && /\.js$/.test(file));
-    const examples = files.map(file => `  ${file.replace(/\.js$/, '')}`);
+    const examples = files.map(file => `    ${file.replace(/\.js$/, '')}`);
     console.log(examples.join('\n') + '\n');
   }
 

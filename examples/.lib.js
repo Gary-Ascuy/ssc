@@ -11,5 +11,9 @@ module.exports = {
       parity: program.ooParity,
       stopBits: +program.ooStopBits
     }};
+  },
+
+  getInputFile() {
+    return program.input;
   }
 };

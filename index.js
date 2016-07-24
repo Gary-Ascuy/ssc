@@ -1,3 +1,7 @@
 const SSC = require('./lib/ssc.js');
+const Sequence = require('./lib/sequence.js');
 
-module.exports = {SSC};
+//
+// Exports SSC && Sequence
+//
+module.exports = {SSC, Sequence};
