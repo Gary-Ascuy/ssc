@@ -27,8 +27,27 @@ $ ssc list
 ```
 $ ssc run open
 $ ssc run interactive
+$ ssc run sequence --input key-frames.json # JSON OR YAML files
 ```
 
+```
+# Sequence YAML File Example
+# First executes pin "0" to pwm "500", after "2000" mili seconds from start
+# Second executes pin "0" to pwm "2500" and pin "1" to pwd "500", after "4000" mili seconds from previus step
+---
+  defaults:
+    time: 2000
+  keyframes:
+    -
+      time: 2000
+      actions:
+        0: 500
+    -
+      time: 4000
+      actions:
+        0: 2500
+        1: 500
+```
 
 ## Diagrams
 ![Serial Servo Controller](https://raw.githubusercontent.com/Gary-Ascuy/ssc/master/assets/ssc-components.png)
