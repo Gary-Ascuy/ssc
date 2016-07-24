@@ -1,0 +1,22 @@
+{
+  "defaults": {
+    "time": 2000
+  },
+  "keyframes": [{
+    "time": 1000,
+    "actions": {
+      "0": {
+        "pwm": 1500,
+        "duration": 3000
+      }
+    }
+  }, {
+    "actions": {
+      "0": 2500
+    }
+  }, {
+    "actions": {
+      "0": 500
+    }
+  }]
+}

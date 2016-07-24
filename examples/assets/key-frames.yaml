@@ -1,0 +1,16 @@
+---
+  defaults:
+    time: 2000
+  keyframes:
+    -
+      time: 1000
+      actions:
+        0: 500
+    -
+      actions:
+        0: 2500
+        1: 500
+    -
+      actions:
+        0: 500
+        1: 2500
