@@ -32,8 +32,9 @@ $ ssc run sequence --input key-frames.json # JSON OR YAML files
 
 ```
 # Sequence YAML File Example
-# First executes pin "0" to pwm "500", after "2000" mili seconds from start
-# Second executes pin "0" to pwm "2500" and pin "1" to pwd "500", after "4000" mili seconds from previus step
+# First executes pin "0" to pwm "500", after "2000" milliseconds from start
+# Second executes pin "0" to pwm "2500" and pin "1" to pwd "500",
+# after "4000" milliseconds from previus step
 ---
   defaults:
     time: 2000
