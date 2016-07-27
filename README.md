@@ -1,12 +1,33 @@
 # Serial Servo Controller (SSC)
 
-The main objective of this repository (module), it is compile and have in only one place all the imformation required to use a SSC, like design, software and other kind of things. also the propouse it's have code to manage servos.
+The main objective of this repository (module), it is compile and have in only one place all the imformation required to use a SSC from computer, like design, software and other kind of things. also the propouse it's have code to manage servos. 
+
+## TODO - High level commands configuration
+```
+# Example
+const robot = new Robot("commands.yaml");
+robot.do('move-arm');
+robot.do('stand-up');
+
+## When commands.yaml is
+defaults:
+  time: 0
+commands: 
+  move-arm: sequence of actions ... to-be-define maybe same to key-frames.json 
+  stand-up: sequence of actions ... 
+  ...
+  
+# yep, you can configure with a file a robot and this provides high level commands 
+```
+## Video-Draft Description
+
+https://www.youtube.com/watch?v=YV9r7CbM9Zc
 
 ## CP210x USB to UART Bridge Virtual COM Port (VCP) Drivers
 Install this is required to have a way to control the SSC from computer
 https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx
 
-## How it can be used
+## How Can I use this?
 
 ### Install
 ```
