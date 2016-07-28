@@ -1,6 +1,6 @@
 # Serial Servo Controller (SSC)
 
-The main objective of this repository (module), it is compile and have in only one place all the imformation required to use a SSC from computer, like design, software and other kind of things. also the propouse it's have code to manage servos. 
+The main objective of this repository (module), it is compile and have in only one place all the imformation required to use a SSC from computer, like design, software and other kind of things. also the propouse it's have code to manage servos.
 
 ## TODO - High level commands configuration
 ```
@@ -12,14 +12,14 @@ robot.do('stand-up');
 ## When commands.yaml is
 defaults:
   time: 0
-commands: 
-  move-arm: sequence of actions ... to-be-define maybe same to key-frames.json 
-  stand-up: sequence of actions ... 
+commands:
+  move-arm: sequence of actions ... to-be-define maybe same to key-frames.json
+  stand-up: sequence of actions ...
   ...
-  
-# yep, you can configure with a file a robot and this provides high level commands 
+
+# yep, you can configure with a file a robot and this provides high level commands
 ```
-## Video-Draft Description
+## Draft - Video Tutorial
 
 https://www.youtube.com/watch?v=YV9r7CbM9Zc
 
@@ -71,7 +71,7 @@ $ ssc run sequence --input key-frames.json # JSON OR YAML files
         1: 500
 ```
 
-## Diagrams
+## Diagram
 ![Serial Servo Controller](https://raw.githubusercontent.com/Gary-Ascuy/ssc/master/assets/ssc-components.png)
 
 ## Robots that use SSC
@@ -93,8 +93,6 @@ $ ssc run sequence --input key-frames.json # JSON OR YAML files
 ![Arm](http://i.ebayimg.com/images/g/lPsAAOSw5ZBWGIax/s-l300.jpg)
 
 ## Contributions
-
-if you are interested to participate in this project, you can email me to gary.ascuy@gmail.com. and let's do it T^T)9
-this is under construction, one of golds of this project it is have a good and easy way to manage those robots.
+Help me !!! we can create a great module. email me to sync (gary.ascuy@gmail.com) and let's do it, we can have a good module working together T^T)9
 
 ![We want you for this Project](https://cdn.meme.am/instances/400x/64337504.jpg)
