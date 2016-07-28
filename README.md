@@ -2,8 +2,13 @@
 
 The main objective of this repository (module), it is compile and have in only one place all the imformation required to use a SSC from computer, like design, software and other kind of things. also the propouse it's have code to manage servos.
 
-## TODO - High level commands configuration
+## TODOs
 ```
+- (high priority // because it's hard do manual test xD u.u lazyness :D) Tests
+
+- Improve events management
+
+- High level commands configuration &&
 # Example
 const robot = new Robot("commands.yaml");
 robot.do('move-arm');
