@@ -35,6 +35,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "serialport": "^4.0.1",
+    "vows": "^0.8.1",
     "yamljs": "^0.2.8"
   },
   "preferGlobal": true,
