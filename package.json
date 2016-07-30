@@ -4,7 +4,7 @@
   "description": "Serial Servo Controller (SSC)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"TODO: ASAP create a test set\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -35,8 +35,10 @@
   "dependencies": {
     "commander": "^2.9.0",
     "serialport": "^4.0.1",
-    "vows": "^0.8.1",
     "yamljs": "^0.2.8"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4.1"
   },
   "preferGlobal": true,
   "bin": {
