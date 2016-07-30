@@ -1,8 +1,10 @@
 language: node_js
 node_js:
-  - "6.1"
+- '6.1'
 deploy:
   provider: npm
-  api_key: $NPM_API_KEY
+  email: gary.ascuy@gmail.com
   on:
     branch: master
+  api_key:
+    secure: YzrMksog62VfA/LEsW9HEHoBtZrc5gYk8UGEb14p3mjo0U9O+UWX/8TduJ4OrY9sl5zzEFDiP/pcT9v+KqCvd8TwDttUxoKJEdS1ehMzDetFj/QUSqHTXSN7b0Gzsl+ydnrXqnFKQWdaEhqwakClYDphqoWnt1rUi+e/lFWJNPguZCm9jxldeF49yb/wNRAL6Bu71oKgy6X5zjcfVRiomFwhPvy6C8wwwSrqtHtd9p4CCk7LNkSnDuEQ0Jb/gDPTbc/7JOoNhE8gc2Mrc1aGmvzHztRld94N4hO/iTOYCzQzfQHw8hmatXPSQCbdmY1uUPuzksNyzHCKVNt2xR+CW+/tHJpt6QjWlyQ4yv1A/2joVLd5hQv0ej4qTHDf6FdTye+nMbwqm9nor/E2C9PBM7snFqZ6CIC53DC6Z+9iaXLQTsdcSRwxai3o0dUf0vDJB1+EKYonZ8uBeIt7fvKlv8RtfQSFqjxcaKzpKPfQU0Ff3D2zgP3zzpvI+an8LCGabdM14UeIqp//ITH8oCdnK0IqcyWaHPPHOXLw8C6oJ7x1o4exKXwV7J+6/UU09glWMRWKrfOp8MVJpkF431EQju11M6D9pgINhfyz1jDZ8fRbtFeiUvNQ2bdA6InmsRmvos1Gu1J8nK0/xmKVGUxBaL5Tf/0vaTw5phLt8PiwEiA=
