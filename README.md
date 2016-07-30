@@ -1,4 +1,5 @@
-# Serial Servo Controller (SSC)
+# Serial Servo Controller (SSC) 
+[![Build Status](https://travis-ci.org/Gary-Ascuy/ssc.svg?branch=master)](https://travis-ci.org/Gary-Ascuy/ssc)
 
 The main objective of this repository (module), it is compile and have in only one place all the imformation required to use a SSC from computer, like design, software and other kind of things. also the propouse it's have code to manage servos.
 
