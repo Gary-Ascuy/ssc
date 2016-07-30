@@ -4,8 +4,6 @@ The main objective of this repository (module), it is compile and have in only o
 
 ## TODOs
 ```
-- (high priority // because it's hard do manual test xD u.u lazyness :D) Tests
-
 - Improve events management
 
 - High level commands configuration &&
