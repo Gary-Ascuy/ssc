@@ -1,6 +1,8 @@
 # Serial Servo Controller (SSC) 
 [![Build Status](https://travis-ci.org/Gary-Ascuy/ssc.svg?branch=master)](https://travis-ci.org/Gary-Ascuy/ssc)
 [![Version](https://img.shields.io/npm/v/serial-servo-control.svg)](http://npm.im/serial-servo-control)
+[![dependencies Status](https://david-dm.org/Gary-Ascuy/ssc/status.svg)](https://david-dm.org/Gary-Ascuy/ssc)
+[![devDependencies Status](https://david-dm.org/Gary-Ascuy/ssc/dev-status.svg)](https://david-dm.org/Gary-Ascuy/ssc?type=dev)
 [![Downloads](https://img.shields.io/npm/dm/serial-servo-control.svg)](http://npm-stat.com/charts.html?package=serial-servo-control)
 [![MIT License](https://img.shields.io/npm/l/serial-servo-control.svg)](http://opensource.org/licenses/MIT)
 
