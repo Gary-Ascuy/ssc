@@ -1,5 +1,8 @@
 # Serial Servo Controller (SSC) 
 [![Build Status](https://travis-ci.org/Gary-Ascuy/ssc.svg?branch=master)](https://travis-ci.org/Gary-Ascuy/ssc)
+[![Version](https://img.shields.io/npm/v/serial-servo-control.svg)](http://npm.im/serial-servo-control)
+[![Downloads](https://img.shields.io/npm/dm/serial-servo-control.svg)](http://npm-stat.com/charts.html?package=serial-servo-control)
+[![MIT License](https://img.shields.io/npm/l/serial-servo-control.svg)](http://opensource.org/licenses/MIT)
 
 The main objective of this repository (module), it is compile and have in only one place all the imformation required to use a SSC from computer, like design, software and other kind of things. also the propouse it's have code to manage servos.
 
