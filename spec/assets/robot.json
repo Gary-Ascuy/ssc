@@ -1,0 +1,36 @@
+{
+  "commands": {
+    "move-arm": [{
+      "time": 3000,
+      "actions": {"0": 2500}
+    }, {
+      "time": 1000,
+      "actions": {"0": 2500}
+    }, {
+      "time": 1500,
+      "actions": {"0": 1500}
+    }],
+
+    "move-leg": [{
+      "time": 1000,
+      "actions": {"0": 2500}
+    }, {
+      "time": 500,
+      "actions": {"0": 2500}
+    }, {
+      "time": 2000,
+      "actions": {"0": 1500}
+    }],
+
+    "something": [{
+      "time": 2000,
+      "actions": {"0": 2500}
+    }, {
+      "time": 1500,
+      "actions": {"0": 2500}
+    }, {
+      "time": 2000,
+      "actions": {"0": 1500}
+    }]
+  }
+}
