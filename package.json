@@ -33,6 +33,7 @@
     "node": ">=4.4.7"
   },
   "dependencies": {
+    "async": "^2.0.1",
     "commander": "^2.9.0",
     "serialport": "^4.0.1",
     "yamljs": "^0.2.8"

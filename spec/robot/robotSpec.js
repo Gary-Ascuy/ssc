@@ -3,11 +3,26 @@ describe('Robot', function() {
   let robot;
 
   beforeEach(() => {
-    const commands = [{name: 'something'}];
+    const something = [{
+      time: 3000,
+      actions: {"0": 2500}
+    }, {
+      time: 1000,
+      actions: {"0": 2500}
+    }, {
+      time: 1500,
+      actions: {"0": 1500}
+    }];
+
+    const commands = {something};
     robot = new Robot({commands});
   });
 
-  it('should be able to do something', function() {
-    expect(robot._options).not.toBe(null);
+  it('should have command "something"', function() {
+    expect(robot.has('something')).toBe(true);
+  });
+
+  it('shouldn\'t have command "gary"', function() {
+    expect(robot.has('gary')).toBe(false);
   });
 });
