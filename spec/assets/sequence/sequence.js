@@ -23,7 +23,12 @@ const moveLeg = [{
   "actions": {"0": 1500}
 }];
 
+const pick = [{
+  "time": 10,
+  "actions": {"0": 2500}
+}];
+
 //
 // Export
 //
-module.exports = {keyframes: moveArm, moveLeg};
+module.exports = {keyframes: moveArm, moveLeg, pick};
