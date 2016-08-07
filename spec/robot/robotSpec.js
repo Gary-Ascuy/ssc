@@ -18,7 +18,7 @@ const moveLeg = [{
   "actions": {"0": 2500}
 }];
 
-describe('Robot', function() {
+describe('Robot Module', function() {
   const {Robot} = require('../..');
   let robot;
 
