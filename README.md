@@ -1,4 +1,4 @@
-# Serial Servo Controller (SSC) 
+# Serial Servo Controller (SSC)
 [![Build Status](https://travis-ci.org/Gary-Ascuy/ssc.svg?branch=master)](https://travis-ci.org/Gary-Ascuy/ssc)
 [![Version](https://img.shields.io/npm/v/serial-servo-control.svg)](http://npm.im/serial-servo-control)
 [![dependencies Status](https://david-dm.org/Gary-Ascuy/ssc/status.svg)](https://david-dm.org/Gary-Ascuy/ssc)
@@ -8,25 +8,25 @@
 
 The main objective of this repository (module), it is compile and have in only one place all the imformation required to use a SSC from computer, like design, software and other kind of things. also the propouse it's have code to manage servos.
 
-## TODOs
+## Code
 ```
-- Improve events management
+const {Robot, SSC, Transformer: {createFrom}, Loader: {loadSync}} = require('../..');
 
-- High level commands configuration &&
-# Example
-const robot = new Robot("commands.yaml");
-robot.do('move-arm');
-robot.do('stand-up');
+const adapter = new SSC({
+  transform: createFrom('degree', {positive: true})
+});
+
+const keyframe = (frame) => adapter.write(frame);
+const robot = new Robot(loadSync('robot.yaml'));
+robot.do('moveArm', {events: {keyframe}});
 
 ## When commands.yaml is
 defaults:
   time: 0
 commands:
-  move-arm: sequence of actions ... to-be-define maybe same to key-frames.json
-  stand-up: sequence of actions ...
+  moveArm: sequence of actions ... to-be-define maybe same to key-frames.json
+  standUp: sequence of actions ...
   ...
-
-# yep, you can configure with a file a robot and this provides high level commands
 ```
 ## Draft - Video Tutorial
 
